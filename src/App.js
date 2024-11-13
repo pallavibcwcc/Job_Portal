@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import Paper from '@mui/material/Paper';
+import Navbar  from './components/Navbar/navbar';
+// import Adddatamodal from './components/modals/Adddatamodal';
+import Table from './components/Table/tableView';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const APP =() => {
+  return(
+<div>
+<Paper>
+<Navbar/>
+{/* <Adddatamodal/> */}
+</Paper>
+<Table/>
+</div>
+  )
 }
 
-export default App;
+export default APP;
